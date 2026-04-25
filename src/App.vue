@@ -4,17 +4,17 @@
 
     <!-- ══════════ HEADER ══════════ -->
     <header class="site-header">
-        <img src="../public/Encabezado.png" alt="">
+        <img src="/Encabezado.png" alt="">
     </header>
 
     <!-- ══════════ HERO SECTION ══════════ -->
     <section class="hero-section">
       <div class="hero-inner">
         <div class="hero-diagram">
-          <img src="../grafico.png" alt="Red de distribución" class="diagram-img" />
+          <img src="/grafico.png" alt="Red de distribución" class="diagram-img" />
         </div>
         <div class="hero-image-wrap">
-          <img src="../srta.png" alt="Promolider" class="hero-img" />
+          <img src="/srta.png" alt="Promolider" class="hero-img" />
         </div>
         <div class="form-box">
           <p class="form-pre">Reserva tu posición ahora</p>
@@ -44,12 +44,12 @@
 
     <!-- ══════════ BENEFICIOS ══════════ -->
     <section class="full-img-section">
-      <img src="../Beneficios.png" alt="Beneficios Promolider" class="full-img" />
+      <img src="/Beneficios.png" alt="Beneficios Promolider" class="full-img" />
     </section>
 
     <!-- ══════════ FEATURES ══════════ -->
     <section class="full-img-section no-pad">
-      <img src="../Features.png" alt="Features Promolider" class="full-img" />
+      <img src="/Features.png" alt="Features Promolider" class="full-img" />
     </section>
 
     <!-- ══════════ CTA FINAL ══════════ -->
@@ -58,7 +58,7 @@
 
         <!-- Título -->
         <h2 class="cta-title">
-          <img src="../public/redAcademica.png" alt="">
+          <img src="/redAcademica.png" alt="">
         </h2>
 
         <!-- Panel campos + botón -->
@@ -95,7 +95,7 @@
       <div class="footer-col footer-brand">
         <br>
         <div class="footer-logo-row">
-          <img src="../logo.png" alt="Promolíder" class="logo-img logo-sm" />
+          <img src="/logo.png" alt="Promolíder" class="logo-img logo-sm" />
         </div>
         
         <p class="footer-desc">
