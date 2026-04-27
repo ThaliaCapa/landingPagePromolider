@@ -4,6 +4,7 @@
 
     <!-- ══════════ HEADER ══════════ -->
     <header class="site-header">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <img
         src="/images/Encabezado.png"
         alt="Promolíder Header"
@@ -368,6 +369,8 @@ body {
    HERO — 3 columnas
 ════════════════════════════ */
 .hero-section {
+padding: 20px 0;
+overflow: hidden;
   background: radial-gradient(
     ellipse 80% 90% at 50% 55%,
     rgba(0, 65, 16, 0.25) 0%,
@@ -778,9 +781,9 @@ body {
 }
 
 /* ════════════════════════════
-   RESPONSIVE — TABLET (max 960px)
+   RESPONSIVE — TABLET (max 1100px)
 ════════════════════════════ */
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   /* Hero: columna única */
   .hero-grid {
     display: grid;
@@ -925,6 +928,86 @@ body {
   }
   .woman-img {
     max-width: 580px;
+  }
+}
+
+/* ════════════════════════════════════════════════
+   AJUSTES SOLO PARA MÓVILES (No toca tu diseño PC)
+   ════════════════════════════════════════════════ */
+@media (max-width: 960px) {
+  /* 1. Cambiamos el Grid a una sola columna */
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    padding: 20px !important;
+    text-align: center;
+    gap: 30px !important;
+  }
+
+  /* 2. Reordenamos: 1° Chica, 2° Formulario, 3° Diagrama */
+  .hero-col-center { order: 1; }
+  .hero-col-right { order: 2; margin: 0 !important; transform: none !important; }
+  .hero-col-left { order: 3; }
+
+  /* 3. Ajustamos el tamaño de las imágenes para que no se corten */
+  .woman-img {
+    max-width: 280px !important;
+    margin: 0 auto !important;
+  }
+  
+  .diagram-img {
+    max-width: 100% !important;
+  }
+
+  /* 4. El formulario ocupa el ancho disponible y se ve más cómodo */
+  .form-box {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 25px 20px !important;
+  }
+
+  /* 5. Ponemos los labels encima de los inputs en el celular */
+  .form-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 5px !important;
+  }
+
+  .form-row label {
+    text-align: left !important;
+    min-width: 100% !important;
+  }
+
+  .form-row input {
+    width: 100% !important;
+  }
+
+  /* 6. Ajuste del CTA para que no se amontone */
+  .cta-inner {
+    flex-direction: column !important;
+    padding: 20px !important;
+  }
+  
+  .cta-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .cta-row label {
+    text-align: left !important;
+    min-width: 100% !important;
+  }
+  
+  .btn-eco {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* 7. Footer en vertical */
+  .site-footer {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 30px !important;
   }
 }
 </style>
