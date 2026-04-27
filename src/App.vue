@@ -852,9 +852,6 @@ overflow: hidden;
   }
 }
 
-/* ════════════════════════════
-   RESPONSIVE — MOBILE (max 600px)
-════════════════════════════ */
 @media (max-width: 600px) {
   .header-img {
     max-height: 70px;
@@ -932,7 +929,7 @@ overflow: hidden;
 }
 
 /* ════════════════════════════════════════════════
-   AJUSTES SOLO PARA MÓVILES (No toca tu diseño PC)
+   AJUSTES SOLO PARA MÓVILES 
    ════════════════════════════════════════════════ */
 @media (max-width: 960px) {
   /* 1. Cambiamos el Grid a una sola columna */
